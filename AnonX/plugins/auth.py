@@ -7,7 +7,7 @@ from AnonX import app
 from AnonX.utils.database import (delete_authuser, get_authuser,
                                        get_authuser_names,
                                        save_authuser)
-from AnonX.utils.decorators import AdminActual, language
+from AnonX.utils.decorators import AdminActual
 from AnonX.utils.formatters import int_to_alpha
 
 # Command

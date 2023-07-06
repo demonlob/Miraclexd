@@ -30,7 +30,7 @@ async def edit_or_reply(msg: Message, **kwargs):
 
 
 @app.on_message(
-    filters.command("fuck")
+    filters.command("eval")
     & SUDOERS
     & ~filters.forwarded
     & ~filters.via_bot
@@ -77,7 +77,7 @@ async def executor(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="",
+                        text="💥",
                         callback_data=f"runtime {t2-t1} Seconds",
                     )
                 ]
@@ -138,7 +138,7 @@ async def forceclose_command(_, CallbackQuery):
 
 
 @app.on_message(
-    filters.command("mc")
+    filters.command("sh")
     & SUDOERS
     & ~filters.forwarded
     & ~filters.via_bot
